@@ -7,9 +7,11 @@
   body { line-height:1.2; margin:auto; padding:3px; max-width:1024px; display:none; FONT-FAMILY:"Segoe UI",ARIAL; }
   h1  { font-size:200%; padding:16px; border:1px solid lightgrey; BACKGROUND:#f0f0f0; }
   h2  { border-bottom:1px solid grey; padding:2px }
-  h4 {margin-bottom: 0; text-indent: 1em;}
+  h4 {margin-bottom: 0; text-indent: 1em;text-decoration: underline}
+
   ul,ol {margin-top: 0; margin-bottom: 0.5em; }
-  li{color:grey}
+  li::before{content:"\2022";color:grey;margin-right:0.5em}
+
 
 </style>
 <body onload="document.body.innerHTML=md.html(document.body.innerHTML); document.body.style.display='block';">
